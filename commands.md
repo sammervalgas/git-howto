@@ -45,6 +45,28 @@ Trocando de repositórios:
 
 <br>
 
+### Add
+* Terminologia de status
+
+   | STATUS  | DESCRIÇÃO|
+   |:----------:|:-------------:|
+   | Staged   |    Estado Monitoriado pelo git   |
+   | Unstaged   |    Estado **NÃO** monitorado pelo git   |
+   
+   
+ * Adicionando arquivos raiz (.)
+    
+    
+    git add .
+    
+
+* Adicionando arquivo por caminho
+
+    
+    git add <caminho do repositório>
+
+
+
 ### Diff
 
 Procurando diferença entre arquivos e repositórios
