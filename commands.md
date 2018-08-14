@@ -56,12 +56,12 @@ git checkout -b <nome_nova_branch> [<branch_a-ser-copiada>]
    
  * Adicionando arquivos raiz (.)
 ```bash
-git add 
+git add .
 ```
 * Adicionando arquivo por caminho
 
 ```bash
-git add <caminho do repositório ou arquivo>
+git add <caminho_do_repositório ou arquivo>
 ```
     
 
@@ -92,17 +92,21 @@ Mostra informações dos historicos de commits realizados
 ### Whatchanged
 * Mostra informações dos historicos de commits realizados e arquivos que foram modificados
 ```bash
-git whatchanged (-p = detalhes)
+git whatchanged
+
+git whatchanged -p (detalhado)
 ```
 
 
 ### Remote
-
-    git remote
-    
-* Enviando projeto para repositorio remoto
+* 
 ```bash
-git remote add origin https://github.com/<username>/<repository>.git
+    git remote
+```
+    
+* Conectando ao repositṕrio remoto com alias 'origin' onde é uma representação para o caminho do endereço do repositório.
+```bash
+git remote add origin https://github.com/<git_username>/<repository_name>.git
 ```
                 
     
@@ -114,8 +118,12 @@ git commit -m 'Mensagem de commit'
       
 
 ### Push
-
+* Envia os dados da branch local para branch remota localizado no repositório origin
 ```bash
-git push origin <nome_da_branch>
+git push origin <nome_da_branch_local>
 ```
 
+* ( -U ou --set-upstream ) unifica a branch local a remota tirando a necessidade de colocar o parametro 'origin' podento realizar o push somente com _git push_.
+```bash
+git push -U <nome_da_branch_local>
+```
