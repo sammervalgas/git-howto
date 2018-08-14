@@ -40,7 +40,6 @@ Aguarde a instalação do Brew e prossiga executando o comando abaixo:
 
     brew install git
 
-
 <br>
 
 
@@ -50,7 +49,7 @@ Verifique a versão do git que foi instalada executando o seguinte comando:
  
     git --version
 
-Para evitar erros de commit, é uma boa idéia configurar seu usuário para git (use a opção **–global** para especificar as configurações globais / todo computador). 
+Para evitar erros de commit, é uma boa idéia configurar seu usuário para git (use a opção **–global** para especificar as configurações globais, será acessado em qualquer lugar e por qualquer usuário). 
             
     git config --global user.name "sampleuser"
     git config --global user.email "sampleuser@example.com"
