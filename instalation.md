@@ -1,6 +1,6 @@
 ## Instalando o Git
 
-Para isso, escolha seu sistema operacional na página de [Downloads]() do projeto e siga as instruções de instalação do programa.
+Para isso, escolha seu sistema operacional na página de [Downloads](https://git-scm.com/downloads) do projeto e siga as instruções de instalação do programa.
 
 <br>
 

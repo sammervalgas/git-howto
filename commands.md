@@ -4,6 +4,7 @@ Inicia um novo projeto como repositório git.
 * Entre na pasta que deve ser um repositório
 
 
+    
     git init
 
 
@@ -12,11 +13,15 @@ Inicia um novo projeto como repositório git.
 * Verificando status do repositório
 
     
+
     git status
 
 
-### Lista
+### Lista 
+* Arquivos
 
+
+    git ls-files
 
 
 ### Clonando o projeto
@@ -43,7 +48,12 @@ Trocando de repositórios:
     
     git checkout origin <Nome da branch>
 
-<br>
+* Criação de branch (-b)
+
+
+    git checkout -b <nome_nova_branch> [<branch_a-ser-copiada>]
+
+
 
 ### Add
 * Terminologia de status
@@ -63,7 +73,7 @@ Trocando de repositórios:
 * Adicionando arquivo por caminho
 
     
-    git add <caminho do repositório>
+    git add <caminho do repositório ou arquivo>
 
 
 
@@ -82,3 +92,33 @@ Procurando diferença entre arquivos e repositórios
 
 
     git diff <branch.v1> <branch.v2>
+
+
+### Log
+Mostra informações dos historicos de commits realizados
+
+    git log
+    
+### Whatchanged
+Mostra informações dos historicos de commits realizados e arquivos que foram modificados
+
+    git whatchanged (-p = detalhes)
+
+### Remote
+
+    git remote
+    
+* Enviando projeto para repositorio remoto
+                
+      git remote add origin https://github.com/<username>/<repository>.git
+    
+
+### Commit
+      
+      git commit -m 'Mensagem de commit' 
+      
+
+### Push
+
+
+git push origin master
