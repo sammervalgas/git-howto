@@ -27,6 +27,45 @@ git clone https://github.com/<username>/<repositorio>.git
 ```bash
 git tag
 ```
+
+### branch
+
+```bash
+# Lista branches
+git branch 
+
+# Lista branch remotas
+git branch -r
+
+# Cria branch a partir da master
+git branch [branch-name] 
+
+# Pega branch do repositório remoto para local
+git branch -t [branch-name] [origin] [branch-name]
+git checkout [branch-name]
+git pull
+git checkout -t origin/design
+
+
+# Envia branch local para repositório remoto
+git push -u [alias] [branch] 
+```
+
+### fetch
+```bash
+# Verifica atualização do repositório
+git fetch [branch-name]
+```
+
+### Logs
+```bash
+git log 
+```
+
+### whatchanged
+
+git whatchanged -b
+
     
 ### Checkout
 Trocando de repositórios:
