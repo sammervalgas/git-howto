@@ -11,16 +11,16 @@ git init
 ```bash
 git status
 ```
+
 ### Lista 
-
+```bash
     git ls-files
-
+```
 
 ### Clonando o projeto
 ```bash
 git clone https://github.com/<username>/<repositorio>.git
 ```
-
 
 ### Tag
 * Quantas versões exitem do projeto
@@ -60,7 +60,20 @@ git fetch [branch-name]
 ### Logs
 ```bash
 git log 
+
+git log --pretty=oneline
+
+git log --pretty=short
+
+git log --pretty=full
+
+git log --pretty='%an = author / %h = hash / %s = message '
+
+git log stat
+
+git log graph
 ```
+[Git Log](https://git-scm.com/docs/pretty-formats)
 
 ### whatchanged
 
@@ -70,19 +83,19 @@ git whatchanged -b
 ### Checkout
 Trocando de repositórios:
 
-<br>
-* Local
-    
+```bash
+# Local  
     git checkout <Nome da branch ou tag>
 
-<br>
-* Remoto
-    
+# Remoto
     git checkout origin <Nome da branch>
 
-* Criação de branch (-b)
-```bash
-git checkout -b <nome_nova_branch> [<branch_a-ser-copiada>]
+# Criação de branch (-b)
+    git checkout -b <nome_nova_branch> [<branch_a-ser-copiada>]
+
+# Revert
+    git checkout [nome-do-arquivo]
+
 ```
 ### Add
 * Terminologia de status
